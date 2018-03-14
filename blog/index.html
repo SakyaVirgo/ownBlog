@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body , html {
+            width: 100%;
+        }
+        .wrap {
+            width: 100%;
+            position: relative;
+        }
+        .aside {
+            width: 300px;
+            height: 100%;
+            /*background-color: darkseagreen;*/
+            position: fixed;
+            text-align: center;
+        }
+        .container {
+            width: calc(100% - 300px);
+            min-height: 100%;
+            background-color: #eaeaea;
+            margin-left: 300px;
+            height: 2000px;
+            padding-top: 20px;
+            /*position: absolute;*/
+        }
+        .top-black {
+            width: 100%;
+            height: 180px;
+            background-color: rgb(77,77,77);
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            box-sizing: border-box;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            margin: -60px auto 60px;
+            overflow: hidden;
+        }
+        .avatar>img {
+            width: 100%;
+        }
+        #username {
+            color: #696969;
+            font-size: 30px;
+            font-family: Roboto,serif;
+            margin-bottom: 60px;
+        }
+        #motto {
+            color: #999;
+            font-family: lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+            font-size: 14px;
+        }
+        .iconSty{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 30px;
+            margin-left: 20px;
+        }
+        #weibo {
+            background: rgba(170,170,255 , 1);
+            margin-left: 0;
+
+        }
+        #weibo:hover {
+            background: rgba(170,170,255 , .7);
+        }
+        #github {
+            background-color: rgb(175, 182, 202);
+        }
+        #github:hover {
+            background-color: rgba(175, 182, 202 , .7);
+        }
+        #weixin {
+            background-color: rgb(98,185,0);;
+        }
+        #weixin:hover {
+            background-color: rgba(98,185,0,.7);;
+        }
+        .icon-weibo , .icon-GitHub , .icon-weixin {
+            color: #fff;
+        }
+        .asideNav {
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+        .asideNav > a:first-child {
+            margin-bottom: 25px;
+        }
+        .asideNav > a {
+            display: block;
+            width: 120px;
+            height: 40px;
+            border: black 3px solid;
+            box-sizing: content-box;
+            line-height: 40px;
+            border-radius: 20px;
+            color: #000;
+            margin: 0 auto;
+        }
+        .asideNav > a:hover {
+            color: cadetblue;
+        }
+        .header {
+            width: 95%;
+            height: 100px;
+            background: ivory;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            list-style: none;
+            box-sizing: border-box;
+            border: 2px solid rgb(77,77,77);
+            border-radius: 20px;
+        }
+        .header > li {
+            float: left;
+            height: 100%;
+            width: 25%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            color: rgb(77,77,77);
+        }
+        .header>li:nth-of-type(2) {
+            border-left: 2px solid rgb(77,77,77);
+            border-right: 2px solid rgb(77,77,77);
+        }
+        .header>li:nth-of-type(3) {
+            border-right: 2px solid rgb(77,77,77);
+        }
+        .header> li:hover {
+            background-color: rgb(77,77,77);
+            color: ivory;
+        }
+        .content {
+            width: 95%;
+            margin: 0 auto;
+            border-radius: 20px;
+            border: 2px solid rgb(77,77,77);
+            padding-top: 20px;
+        }
+        .artical {
+            width: 95%;
+            margin: 0 auto;
+            border-bottom: 2px solid rgb(77,77,77);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_591236_koxxn96tqs0dx6r.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="aside">
+            <div class="top-black"></div>
+            <div class="avatar">
+                <img src="./img/avatar.jpg" alt="">
+            </div>
+            <p id="username">Sakya</p>
+            <p id="motto">天真善良 ，纯真可爱</p>
+            <div class="asideNav">
+                <a href="">主页</a>
+                <a href="">个人简介</a>
+            </div>
+            <a class="iconSty" id="weibo" href="###">
+                <i class="iconfont icon-weibo"></i>
+            </a>
+            <a class="iconSty" id="github" href="###">
+                <i class="iconfont icon-GitHub"></i>
+            </a>
+            <a class="iconSty"id="weixin" href="###">
+                <i class="iconfont icon-weixin"></i>
+            </a>
+
+        </div>
+        <div class="container">
+            <ul class="header">
+                <li>技   术</li>
+                <li>收   藏</li>
+                <li>照   片</li>
+                <li>其   他</li>
+            </ul>
+            <div class="content">
+                <div class="artical">
+                    <h1>标题</h1>
+                    <p>内容</p>
+                    <span>日期</span>
+                </div>
+                <div class="artical">
+                    <h1>标题</h1>
+                    <p>内容</p>
+                    <span>日期</span>
+                </div>
+                <div class="artical">
+                    <h1>标题</h1>
+                    <p>内容</p>
+                    <span>日期</span>
+                </div>
+                <div class="artical">
+                    <h1>标题</h1>
+                    <p>内容</p>
+                    <span>日期</span>
+                </div>
+                <div class="artical">
+                    <h1>标题</h1>
+                    <p>内容</p>
+                    <span>日期</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
